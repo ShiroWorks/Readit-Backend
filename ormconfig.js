@@ -2,12 +2,12 @@ const rootDir = process.env.NODE_ENV === 'development' ? 'src' : 'build'
 
 module.exports = {
   type: process.env.DB_DIALECT,
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
+  // host: process.env.DB_HOST,
+  // port: process.env.DB_PORT,
   url: process.env.URL,
-  username: process.env.DB_USERNAME,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
+  // username: process.env.DB_USERNAME,
+  // password: process.env.DB_PASSWORD,
+  // database: process.env.DB_DATABASE,
   synchronize: false,
   logging: process.env.NODE_ENV === 'development',
   entities: [rootDir + '/entities/**/*{.ts,.js}'],
@@ -19,4 +19,7 @@ module.exports = {
     migrationsDir: rootDir + '/migrations',
     subscribersDir: rootDir + '/subscribers',
   },
+  extra: {
+    ssl: true
+}
 }
