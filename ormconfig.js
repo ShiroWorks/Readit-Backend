@@ -20,6 +20,7 @@ module.exports = {
     subscribersDir: rootDir + '/subscribers',
   },
   extra: {
-    ssl: true
+    ssl: true,
+    rejectUnauthorized: false
 }
 }
