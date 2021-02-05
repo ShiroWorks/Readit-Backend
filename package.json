@@ -37,12 +37,17 @@
     "typeorm-seeding": "^1.6.1"
   },
   "scripts": {
-    "start": "node build/server.js",
+    "start": "node dist/index.js",
+    "postinstall": "tsc",
     "server": "nodemon --exec ts-node src/server.ts",
     "build": "nodemon --exec ts-node src/server.ts",
     "client": "cd client && npm run dev",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
     "dev": "concurrently \"npm run server\" \"npm run client\" --names server,client",
-    "seed": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed"
-  }
+    "seed": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku"
+  },
+  "engines": { "node": "12.18.1" }
 }
