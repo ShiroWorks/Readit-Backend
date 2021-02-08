@@ -17,7 +17,6 @@
     "ts-node": "^9.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.6",
-   
     "typescript": "^4.1.2"
   },
   "dependencies": {
@@ -38,10 +37,9 @@
     "typeorm-seeding": "^1.6.1"
   },
   "scripts": {
-    "start": "node src/server.ts",
-    
+    "start": "node build/server.js",
+    "build": "npx tsc",
     "server": "nodemon --exec ts-node src/server.ts",
-    
     "client": "cd client && npm run dev",
     "typeorm": "ts-node ./node_modules/typeorm/cli.js",
     "dev": "concurrently \"npm run server\" \"npm run client\" --names server,client",
@@ -50,5 +48,7 @@
     "watch-ts": "tsc -w",
     "deploy": "git add . && git commit -m Heroku && git push heroku"
   },
-  "engines": { "node": "12.18.1" }
+  "engines": {
+    "node": "12.18.1"
+  }
 }
