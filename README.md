@@ -8,6 +8,7 @@ Steps to run this project:
 
 ## This app uses the following tech:
 
+- Node/Express
 - NextJS
 - TypeScript
 - TypeORM
