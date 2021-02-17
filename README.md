@@ -25,6 +25,8 @@ Steps to run this project:
 
 [Live version](http://178.128.41.180)
 
+[Client side code](https://github.com/ShiroWorks/Readit-Client)
+
 <a href="https://ibb.co/xXjq6Z3"><img src="https://i.ibb.co/QpNvM0X/readit2.jpg" alt="readit2" border="0"></a>
 <a href="https://ibb.co/m4WnV1y"><img src="https://i.ibb.co/JHJYw0p/readit3.jpg" alt="readit3" border="0"></a>
 
