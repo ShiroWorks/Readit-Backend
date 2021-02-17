@@ -19,6 +19,7 @@ Steps to run this project:
 - Register
 - Create new community
 - Create new post
+- Comment
 - Arrow voting system
 - Upload image
 
